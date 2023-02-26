@@ -1,0 +1,14 @@
+<p *ngIf="condition; else elseBlock">True</p>
+<ng-template #elseBlock>
+  <p>False</p>
+</ng-template>
+<hr />
+<ul>
+  <li *ngFor="let item of list">{{ item.nome }}</li>
+</ul>
+<hr />
+<div [ngSwitch]="nome">
+  <p *ngSwitchCase="'Barbara'">Barbara</p>
+  <p *ngSwitchCase="'Baloo'">Baloo</p>
+  <p *ngSwitchDefault>Busca não concluída</p>
+</div>
