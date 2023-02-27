@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class DiretivasAtributosComponent {
   public valor : boolean = true
+  public altura : string = '20px'
 
   ngOnInit () : void {
     setInterval ( () => {
